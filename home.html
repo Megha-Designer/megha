@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Appliance Control Demo</title>
+    <style>
+        /* c1{
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 10 px;
+            background-color: aquamarine;
+            margin: 0;
+            padding: 0;
+         } */
+        .app-container{
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color:lightgreen;
+            border-radius: 10px;
+        }
+        h1{
+            font-style: italic;
+            text-align: center;
+            text-decoration: underline;
+            color: darkred;
+        }
+        .appliance{
+            margin: 15px 0;
+        }
+        h2{
+            font-size: 22px bold;
+            color: rgb(39, 39, 1);
+        }
+        .control-btn{
+            background-color: palegoldenrod;
+            color: maroon;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .control-btn:hover{
+            background-color: chartreuse;
+        }
+        .brightness-control{
+            display: flex;
+            align-items: center;
+        }
+        .brightness-slider{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <h1>Home Control</h1>
+        <div class="appliance">
+            <h2>Fan</h2>
+            <button class="control-btn">ON</button>
+            <button class="control-btn">OFF</button>
+            <label for="fan-speed">Speed</label>
+            <input type="range" id="fan-speed" min="1" max="5" value="3">
+        </div>
+        <div class="appliance">
+            <h2>AC</h2>
+            <button class="control-btn">ON</button>
+            <button class="control-btn">OFF</button>
+            <label for="AC-Temperature">AC-Temperature</label>
+            <input type="number" id="AC-Temperature" min="16" max="30" value="24"> 
+        </div>
+        <div class="appliance">
+            <h2>TV</h2>
+            <button class="control-btn">ON</button>
+            <button class="control-btn">OFF</button>
+        </div>
+        <div class="appliance brightness-control ">
+            <h2>Light & Bulb</h2>
+            <button class="control-btn">ON</button>
+            <button class="control-btn">OFF</button>
+            <label for="color-picker">Color:</label>
+            <input type="color" id="color-picker" value="red" >
+            <label for="brightness">Brightness</label>
+            <input type="number" id="Brightness" min="0" max="100" value="50">
+
+        </div>
+    </div>
+</body>
+</html>
